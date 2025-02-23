@@ -36,7 +36,7 @@ export const Content = styled.div`
   padding: 0 15%;
   background: linear-gradient(to right, rgb(0 0 0 / 100%), rgb(0 0 0 / 50%));
   width: 100%;
-  min-height: 100vh;
+  min-height: var(--app-height);
   display: flex;
   flex-direction: column;
 `;

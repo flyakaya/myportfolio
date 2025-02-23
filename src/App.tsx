@@ -9,6 +9,8 @@ import CssBaseline from '@mui/material/CssBaseline';
 import { theme } from '@theme/theme';
 import { Header, ErrorBoundary, LoadingSpinner } from '@/components';
 import { Tones } from '@/types';
+import { GlobalStyles } from '@/styles/globalStyles';
+import { initViewportHeight, cleanupViewportHeight } from '@/utils/viewportHeight';
 
 // Lazy load pages for better performance
 const About = lazy(() => import('@/pages/About'));
@@ -33,12 +35,18 @@ const App = () => {
     return () => window.removeEventListener('popstate', handleUrlChange);
   }, [i18n]);
 
+  useEffect(() => {
+    initViewportHeight();
+    return () => cleanupViewportHeight();
+  }, []);
+
   return (
     <ErrorBoundary>
       <Router>
         <MuiThemeProvider theme={theme}>
           <StyledThemeProvider theme={theme}>
             <CssBaseline />
+            <GlobalStyles />
             <Header />
             <Suspense fallback={<LoadingSpinner />}>
               <Routes>
