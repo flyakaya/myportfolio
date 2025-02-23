@@ -14,14 +14,17 @@ export const fun = {
     description2: "Created digital solutions across industries - most are confidential, so welcome to my public portfolio!",
     skills: {
       title: "Things I'm Good At:",
-      list: "React (we're committed), TypeScript, GraphQL, Next.js, can perfectly boil eggs just the way I like it, Angular, Node.js, Docker (no more \"but it works on my machine\" excuses), Git (including professional conflict resolution), spotify playlist curating"
+      list: "Javascript, React (we're committed), React Native, TypeScript, GraphQL, Next.js, can perfectly boil eggs just the way I like it, Angular, Node.js, Docker (no more \"but it works on my machine\" excuses), Git (including professional conflict resolution), giving accurate estimates, and spotify playlist curating"
     },
     footer: "I make buttons do the clicky thing and websites go zoom while TypeScript yells at me about types"
   },
   timeline: {
-    title: "Career Timeline",
-    firstCareerItem: "Graduated with a Bachelor of Science from Sabanci University, started my journey as a Frontend Developer, focusing on React and React Native for user engagement solutions.",
-    current: "Currently working as a Frontend Developer at a Fintech company, focusing on React and React Native for user engagement solutions."
+    title: "Adventure Log",
+    firstCareerItem: "The year I traded my student ID for a work badge",
+    secondCareerItem: "I tried to remember something from 2018, but it\’s 404",
+    thirdCareerItem: "Became an advanced gamer during the pandemic—special thanks to CS: Go, Overcooked, and Don't Starve Together!",
+    fourthCareerItem: `Tuktuked my way through Thailand, balancing remote work with red curry for 2 months. Earned my PADI underwater for 30m+`,
+    current: "probably trying to find my phone in the house",
   },
   contact: {
     title: "Contact Me",

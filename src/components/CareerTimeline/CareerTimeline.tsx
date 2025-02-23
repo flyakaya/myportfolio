@@ -19,6 +19,7 @@ type SliderYears = {
   firstCareerItem: number;
   secondCareerItem: number;
   thirdCareerItem: number;
+  fourthCareerItem: number;
   current: number;
 }
 
@@ -29,6 +30,7 @@ const sliderYears: SliderYears = {
   firstCareerItem: 2017,
   secondCareerItem: 2018,
   thirdCareerItem: 2022,
+  fourthCareerItem: 2024,
   current: 2025
 }
 
@@ -63,6 +65,11 @@ const CareerTimeline = () => {
         },
 
         {
+          id: 'fourthCareerItem',
+          "year": sliderYears.fourthCareerItem,
+          "description": t('timeline.fourthCareerItem'),
+        },
+        {
           id: 'current',
           "year": sliderYears.current,
           "description": t('timeline.current'),
@@ -86,6 +93,10 @@ const CareerTimeline = () => {
 
   const valuetext = (value?: number): string => value && selectedYear? String(getAchievement(selectedYear)?.year) : ''
 
+  const handleOnChangeCommitted = (_event:React.SyntheticEvent | Event, value: number | number[]) => {
+    setSelectedYear(value as number);
+  };
+
   return (
     <Box sx={{
       width: '100%',
@@ -99,10 +110,7 @@ const CareerTimeline = () => {
             aria-label="Career Timeline"
             defaultValue={sliderYears.default}
             getAriaValueText={valuetext}
-            onChangeCommitted={(_event, value) => {
-              console.log(value, _event, 'onChangeCommitted')
-              setSelectedYear(value as number);
-            }}
+            onChangeCommitted={handleOnChangeCommitted}
             valueLabelFormat={getTooltipContent}
             step={null}
             marks={getAchievements()?.map(a => ({
