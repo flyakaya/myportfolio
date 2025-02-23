@@ -1,8 +1,10 @@
-import { styled } from '@mui/material/styles';
-import { AppBar, Toolbar } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 import { Link as RouterLink } from 'react-router-dom';
-import ToneToggle from '../ToneToggle/ToneToggle';
+
+import { styled } from '@mui/material/styles';
+import { AppBar, Toolbar } from '@mui/material';
+
+import { ToneToggle } from '@/components';
 
 const StyledAppBar = styled(AppBar)(({ theme }) => ({
   backgroundColor: theme.palette.common.black,
@@ -45,9 +47,6 @@ const Header = () => {
     <StyledAppBar position="sticky">
       <StyledToolbar>
         <Logo to="/">{t('header.logoText')}</Logo>
-          {/* <NavButton to="/posts">
-            Contact
-          </NavButton> */}
           <ToneToggle />
       </StyledToolbar>
     </StyledAppBar>

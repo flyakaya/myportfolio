@@ -22,7 +22,7 @@ const About = () => {
       // @ts-ignore (since Ukiyo is loaded via CDN)
       new Ukiyo(el);
     });
-    
+
   }, []);
 
   return (
@@ -52,7 +52,7 @@ const About = () => {
           </PageOneContent>
           <PageOneRight>
             <FlipContainer>
-              <Flipper className={t('tone.current') === 'fun' ? 'flip' : ''}>
+              <Flipper className={isFunMode() ? 'flip' : ''}>
                 <Front>
                   <StyledSelfImage src={photo} alt="Fulya" />
                 </Front>

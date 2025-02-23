@@ -1,25 +1,26 @@
 import { useTranslation } from 'react-i18next';
+import { styled } from 'styled-components';
+
 import {
   Content,
   H2, H3, P,
   FooterContainer
 } from '@/styles';
-import sims from '@assets/simsbg.jpg';
+import { sims, matrix } from '@/assets';
 import PageImage from '@/components/PageImage/PageImage';
-import i18n from '@/i18n/config';
-import matrix from '@assets/matrix.jpg';
-import CareerTimeline from '@/components/CareerTimeline';
-import { styled } from 'styled-components';
+import {CareerTimeline} from '@/components';
+import { useTone } from '@/hooks';
 
 const AboutSection = () => {
   const { t } = useTranslation();
+  const { isFunMode } = useTone();
 
   return (
     <FooterContainer>
       <PageImage
-        src={i18n.language === 'fun' ? sims : matrix}
+        src={isFunMode() ? sims : matrix}
         alt="Header background"
-        className={`ukiyo ${i18n.language === 'fun' ? 'sims' : 'matrix'}`}
+        className={`ukiyo ${isFunMode() ? 'sims' : 'matrix'}`}
       />
       <Content>
         <TitleContainer>

@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import { Box, Slider } from '@mui/material';
 
 import { H3, P } from '@/styles/commonStyles';
-import { Box, Slider } from '@mui/material';
 import { useTone } from '@/hooks';
 
 type Achievement = {

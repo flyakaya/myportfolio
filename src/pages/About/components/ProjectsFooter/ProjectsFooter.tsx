@@ -2,18 +2,18 @@ import {
   FooterContainer,
   Content,
 } from '@/styles/commonStyles';
-import retrobgg from '@assets/retrobgg.png';
-import PageImage from '@/components/PageImage';
-import i18n from '@/i18n/config';
-import { matrix } from '@/assets';
+import { PageImage } from '@/components';
+import { matrix, retrobgg } from '@/assets';
+import { useTone } from '@/hooks';
 
 const ProjectsFooter = () => {
+  const { isFunMode } = useTone();
 
   return (
     <FooterContainer>
       <PageImage
-        className={`${i18n.language === 'fun' ? 'retrobgg' : 'matrix3'}`}
-        src={i18n.language === 'fun' ? retrobgg : matrix}
+        className={`${isFunMode() ? 'retrobgg' : 'matrix3'}`}
+        src={isFunMode() ? retrobgg : matrix}
         alt="Header background"
       />
       <Content>

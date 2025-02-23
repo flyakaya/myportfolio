@@ -32,7 +32,7 @@ const ToneToggle = () => {
   };
 
   const getButtonText = () => {
-    return i18n.language === Tones.FUN ? 'Lets Be Professional' : `Open Fun Mode`;
+    return isFunMode() ? 'Lets Be Professional' : `Open Fun Mode`;
   };
 
   return (
