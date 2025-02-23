@@ -19,7 +19,7 @@ Congratulations! You've found this magical piece of software (the "Software"). H
 Keep this notice in all copies or substantial portions of the Software. It's like keeping the recipe for grandma's secret cookies—important!
 
 ⚠️ **The "Use at Your Own Risk" Clause:**
-This Software is provided "as is," without any warranty. If it breaks your computer, makes your coffee taste weird, or causes your cat to plot world domination, that's on you! I'm not responsible for any claims, damages, or other liabilities. Seriously, I'm just a humble coder!
+This Software is provided "as is," without any warranty.
 
 🤷‍♂️ **In Summary:**
 - Did I make this? Yep!
