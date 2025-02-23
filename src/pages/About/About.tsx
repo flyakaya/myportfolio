@@ -79,7 +79,7 @@ const Container = styled.div`
   overflow: hidden;
 `;
 
-const FirstScreenLayer = styled.header`
+const FirstScreenLayer = styled.div`
   height: calc(var(--app-height) - 64px);
   width: 100%;
   position: relative;
