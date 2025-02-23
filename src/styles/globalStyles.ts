@@ -9,6 +9,7 @@ export const GlobalStyles = createGlobalStyle`
     margin: 0;
     padding: 0;
     height: 100%;
+    overscroll-behavior-y: none; /* Prevent pull-to-refresh */
   }
 
   #root {
