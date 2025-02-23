@@ -1,13 +1,14 @@
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
-import { ThemeProvider as MuiThemeProvider } from '@mui/material/styles';
-import { ThemeProvider as StyledThemeProvider } from 'styled-components';
-import CssBaseline from '@mui/material/CssBaseline';
 import { Suspense, lazy, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { ThemeProvider as StyledThemeProvider } from 'styled-components';
+
+import { ThemeProvider as MuiThemeProvider } from '@mui/material/styles';
+import CssBaseline from '@mui/material/CssBaseline';
+
 import { theme } from '@theme/theme';
-import Header from '@components/Header';
-import ErrorBoundary from '@components/ErrorBoundary';
-import LoadingSpinner from '@components/LoadingSpinner';
+import { Header, ErrorBoundary, LoadingSpinner } from '@/components';
+import { Tones } from '@/types';
 
 // Lazy load pages for better performance
 const About = lazy(() => import('@/pages/About'));
@@ -19,7 +20,7 @@ const App = () => {
   useEffect(() => {
     const handleUrlChange = () => {
       const urlParams = new URLSearchParams(window.location.search);
-      const tone = urlParams.get('tone') === 'fun' ? 'fun' : 'professional';
+      const tone = urlParams.get('tone') === Tones.FUN ? Tones.FUN : Tones.PROFESSIONAL;
       if (i18n.language !== tone) {
         i18n.changeLanguage(tone);
       }

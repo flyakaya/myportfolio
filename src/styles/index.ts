@@ -14,7 +14,8 @@ import {
 } from "./commonStyles";
 
 export {
-    mediaQueries, FooterContent,
+    mediaQueries,
+    FooterContent,
     ProjectList,
     SectionContainer,
     Content,

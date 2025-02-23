@@ -1,7 +1,4 @@
 export const fun = {
-  tone: {
-    current: 'fun'
-  },
   header: {
     greeting: "Hello World",
     title: "// TODO: Write cool title",
@@ -29,6 +26,8 @@ export const fun = {
   contact: {
     title: "Contact Me",
     description: "I'm always looking for new challenges and opportunities to grow. Let's connect and see how we can work together to achieve great things.",
+    link1: "https://www.linkedin.com/in/fulyakaya/",
+    link2: "https://github.com/fulyakaya",
     button: "Contact Me"
   }
 }; 

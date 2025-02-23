@@ -1,19 +1,20 @@
 import { useEffect } from 'react';
 import styled from 'styled-components';
+import { useTranslation } from 'react-i18next';
 
 import { matrix, photo, virus, disney } from '@/assets';
 
-import PageImage from '@/components/PageImage';
-import PageContainer from '@/components/PageContainer';
-import { useTranslation } from 'react-i18next';
-import ProjectsFooter from '@/pages/About/components/ProjectsFooter/ProjectsFooter';
-import AboutSection from '@/pages/About/components/AboutSection/AboutSection';
+import { PageImage, PageContainer } from '@/components';
+import { ProjectsFooter, AboutSection } from '@/pages/About/components';
 import { media } from '@/styles/mediaQueries';
 import { H2, H3, P } from '@/styles/commonStyles';
-import i18n from '@/i18n/config';
+
+import { useTone } from '@/hooks';
 
 const About = () => {
   const { t } = useTranslation();
+  const { isFunMode } = useTone();
+
   useEffect(() => {
     // Initialize parallax
     const els = document.querySelectorAll(".ukiyo");
@@ -21,25 +22,7 @@ const About = () => {
       // @ts-ignore (since Ukiyo is loaded via CDN)
       new Ukiyo(el);
     });
-
-    // Initialize smooth scroll
-    // @ts-ignore (since Lenis is loaded via CDN)
-    const lenis = new Lenis({
-      wrapper: window, // scroll container
-      content: document.documentElement, // scrollable content
-      smoothWheel: true, // enable smooth scrolling
-      lerp: 0.1, // Linear interpolation intensity (0-1)
-      duration: 1.2, // Animation duration in seconds
-      orientation: 'vertical', // or 'horizontal'
-      gestureOrientation: 'vertical', // or 'horizontal' or 'both'
-    });
-
-    const raf = (time: number) => {
-      lenis.raf(time);
-      requestAnimationFrame(raf);
-    }
-
-    requestAnimationFrame(raf);
+    
   }, []);
 
   return (
@@ -47,9 +30,9 @@ const About = () => {
       <FirstScreenLayer />
 
       <PageImage
-        src={i18n.language === 'fun' ? virus : matrix}
+        src={isFunMode() ? virus : matrix}
         alt="Header background"
-        className={`ukiyo ${i18n.language === 'fun' ? 'virus' : 'matrix2'}`}
+        className={`ukiyo ${isFunMode() ? 'virus' : 'matrix2'}`}
       />
 
       <PageContainer variant="banner">

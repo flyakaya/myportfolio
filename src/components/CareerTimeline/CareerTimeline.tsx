@@ -1,8 +1,9 @@
-import i18n from '@/i18n/config';
-import { H3, P } from '@/styles/commonStyles';
-import { Box, Slider } from '@mui/material';
 import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
+
+import { H3, P } from '@/styles/commonStyles';
+import { Box, Slider } from '@mui/material';
+import { useTone } from '@/hooks';
 
 type Achievement = {
   year: number;
@@ -32,7 +33,7 @@ const sliderYears: SliderYears = {
 }
 
 const CareerTimeline = () => {
-  const isFunMode = i18n.language === 'fun';
+  const { isFunMode } = useTone();
 
   const { t } = useTranslation();
   const [selectedYear, setSelectedYear] = useState<number>(sliderYears.default);
@@ -81,17 +82,9 @@ const CareerTimeline = () => {
   `;
   };
 
-  const getAchievement = (value: number): Achievement | undefined => {
-    return getAchievements().find(a => a.year === value);
-  }
+  const getAchievement = (value: number): Achievement | undefined => getAchievements().find(a => a.year === value);
 
-  console.log(selectedYear, 'selectedYear')
-  const valuetext = (value?: number): string => {
-    console.log(value, 'valuetext');
-
-    return value && selectedYear? String(getAchievement(selectedYear)?.year) : '';
-
-  };
+  const valuetext = (value?: number): string => value && selectedYear? String(getAchievement(selectedYear)?.year) : ''
 
   return (
     <Box sx={{
