@@ -1,0 +1,35 @@
+🎉 The "Totally Not a Legal Document" License 🎉
+
+Copyright (c) 2011-2024 GitHub Inc. (and maybe a cat or two)
+
+Hey there, 🧙‍♂️
+
+Congratulations! You've found this magical piece of software (the "Software"). Here's what you can do with it:
+
+✨ **What You Can Do (aka the Fun Stuff):**
+- **Use it:** Go ahead, make it your own! 
+- **Copy it:** (Just don't forget to share the love.)
+- **Modify it:** Tweak it, twist it, make it dance! (Just don't break it, okay?)
+- **Merge it:** Combine it with other code like a smoothie! 
+- **Publish it:** Show it off to your friends! (Or your cat, they're great listeners.)
+- **Distribute it:** Spread the joy far and wide!
+- **Sublicense it:** Share it with your friends, family... (Just kidding, don't do that.)
+
+📝 **The Only Rule:**
+Keep this notice in all copies or substantial portions of the Software. It's like keeping the recipe for grandma's secret cookies—important!
+
+⚠️ **The "Use at Your Own Risk" Clause:**
+This Software is provided "as is," without any warranty. If it breaks your computer, makes your coffee taste weird, or causes your cat to plot world domination, that's on you! I'm not responsible for any claims, damages, or other liabilities. Seriously, I'm just a humble coder!
+
+🤷‍♂️ **In Summary:**
+- Did I make this? Yep!
+- Can you use it? Absolutely!
+- Will it work? Maybe! (No guarantees, my friend.)
+- If it doesn't work? Let's meet in comments! 
+
+May your code be bug-free, your coffee be strong, and your adventures be epic! 🚀
+
+P.S. If this license made you chuckle, give it a star! ⭐ 
+
+XOXO
+flyakaya
