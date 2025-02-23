@@ -1,6 +1,5 @@
 import { useTranslation } from 'react-i18next';
 import {
-  SectionContainer,
   Content,
   H2, H3, P,
   FooterContainer
@@ -11,7 +10,6 @@ import i18n from '@/i18n/config';
 import matrix from '@assets/matrix.jpg';
 import CareerTimeline from '@/components/CareerTimeline';
 import { styled } from 'styled-components';
-import { media } from '@/styles/mediaQueries';
 
 const AboutSection = () => {
   const { t } = useTranslation();
@@ -34,7 +32,7 @@ const AboutSection = () => {
         <TimelineTitleContainer>
           <H2>{t('timeline.title')}</H2>
         </TimelineTitleContainer>
-          <CareerTimeline />
+        <CareerTimeline />
 
 
       </Content>

@@ -64,7 +64,7 @@ const Front = styled(Face)`
   transform: rotateY(0deg);
 `;
 
-const Back = styled(Face)`
+export const Back = styled(Face)`
   transform: rotateY(180deg);
 `;
 
