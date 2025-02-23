@@ -17,8 +17,11 @@ const debouncedSetAppHeight = debounce(setAppHeight, 100);
 
 export const initViewportHeight = () => {
   setAppHeight();
-  window.addEventListener('resize', debouncedSetAppHeight);
-  window.addEventListener('orientationchange', setAppHeight);
+  const isMobile = window.innerWidth <= 768;
+  if(!isMobile) {
+    window.addEventListener('resize', debouncedSetAppHeight);
+    window.addEventListener('orientationchange', setAppHeight);
+  }
 };
 
 export const cleanupViewportHeight = () => {
