@@ -13,5 +13,6 @@ export const GlobalStyles = createGlobalStyle`
 
   #root {
     height: 100%;
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS devices */
   }
 `; 
