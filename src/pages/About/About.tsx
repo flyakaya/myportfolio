@@ -80,11 +80,7 @@ const Container = styled.div`
 `;
 
 const FirstScreenLayer = styled.header`
-  height: 100vh;
-
-  ${media.up('md')`
-    height: 90vh;
-  `}  
+  height: calc(100vh - 64px);
 
   width: 100%;
   position: relative;
