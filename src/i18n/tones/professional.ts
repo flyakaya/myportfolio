@@ -23,7 +23,7 @@ export const professional = {
     firstCareerItem: "Graduated with a Bachelor of Science from Sabanci University, started my journey as a Frontend Developer, focusing on React and React Native for user engagement solutions.",
     secondCareerItem: `I started working with various teams and stakeholders 
     to create and maintain software solutions for multiple company products.
-     Over the next three years, I developed a mobile banking application 
+     Over the next three years, I develop and maintain a mobile banking application 
      and website using React Native for Web, an innovative self-service kiosk application for airlines,
      and digital analytics and engagement platforms.`,
     thirdCareerItem: "In my third career phase, I entered the fintech area, collaborating with diverse teams to develop applications that enhanced customer engagement and streamlined financial interactions. This experience deepened my understanding of financial technologies and regulatory compliance, allowing me to contribute to the future of digital finance.",

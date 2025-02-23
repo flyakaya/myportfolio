@@ -1,6 +1,7 @@
 import {
   FooterContainer,
   Content,
+  H2,
 } from '@/styles/commonStyles';
 import { PageImage } from '@/components';
 import { matrix, retrobgg } from '@/assets';
@@ -17,7 +18,7 @@ const ProjectsFooter = () => {
         alt="Header background"
       />
       <Content>
-        todooo contact me
+        <H2>Contact me</H2>
       </Content>
     </FooterContainer>
   );
