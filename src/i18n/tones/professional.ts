@@ -1,7 +1,4 @@
 export const professional = {
-  tone: {
-    current: 'professional'
-  },
   header: {
     greeting: "Hello, I'm Fulya",
     title: "Software Engineer",

@@ -46,9 +46,9 @@ const About = () => {
               <P>{t('header.taglines2')}</P>
               <P>{t('header.taglines3')}</P>
             </PageOneLeft>
-            <FooterNote><FooterText>
+            <FooterText>
               {t('header.footer')}
-            </FooterText></FooterNote>
+            </FooterText>
           </PageOneContent>
           <PageOneRight>
             <FlipContainer>
@@ -132,13 +132,15 @@ const PageOneContainer = styled.div`
   min-height: 260px;
   backdrop-filter: blur(2px);
   background: transparent;
-
+  align-items: center;
+  
   ${media.up('md')`
     flex-direction: row;
     margin-top: 0;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     height: auto;
+    max-width: 1000px;
 
   `}
 `;
@@ -183,21 +185,6 @@ const StyledSelfImage = styled.img`
   border-radius: 50%;
 `;
 
-const FooterNote = styled.div`
-  font-size: 14px;
-  opacity: 0.8;
-
-  margin-top: 15px;
-
-    ${media.up('lg')`
-    font-size: 0.8rem;
-    opacity: 0.8;
-    max-width: 700px;
-    min-width: 650px;
-    margin-top: 100px;
-  `}
-`;
-
 const PageOneContent = styled.div`
   display: flex;
   flex-direction: column;
@@ -227,6 +214,16 @@ const PageOneLeft = styled.div`
 const FooterText = styled.p`
   font-size: 0.8rem;
   opacity: 0.8;
+  margin-top: 10%;
+
+  ${media.up('md')`
+    font-size: 1.1rem;
+    opacity: 0.8;
+    margin-top: 20%;
+    max-width: 700px;
+    min-width: 650px;
+    margin-top: 100px;
+  `}
 `;
 
 export default About; 

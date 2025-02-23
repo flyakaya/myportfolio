@@ -58,12 +58,6 @@ export const ParallaxImage = styled.img`
   object-fit: cover;
 `;
 
-export const FooterNote = styled.div`
-  font-size: 0.8rem;
-  opacity: 0.8;
-  margin-top: 100px;
-`;
-
 
 export const P = styled.p`
   font-size: 0.9rem;
@@ -93,15 +87,17 @@ export const H2 = styled.h2`
 `;
 
 export const H3 = styled.h3`
-  font-size: 1.2remx;
+  font-size: 1.5remx;
   margin: 0;
-  font-weight: 400;
+  font-weight: 600;
+  margin-top: 16px;
 
   ${media.up('md')`
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   margin: 1rem 0 0;
   font-weight: 400;
   opacity: 0.8;
+  margin-top: 24px;
   `}
 `;
 

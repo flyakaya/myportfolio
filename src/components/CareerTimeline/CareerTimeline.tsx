@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Box, Slider } from '@mui/material';
 
-import { H3, P } from '@/styles/commonStyles';
+import { P } from '@/styles/commonStyles';
 import { useTone } from '@/hooks';
 
 type Achievement = {
@@ -115,7 +115,7 @@ const CareerTimeline = () => {
           {selectedYear &&
             <>
                     
-              <H3>{getAchievement(selectedYear)?.year}</H3>
+              <p>{getAchievement(selectedYear)?.year}</p>
               <P>{getAchievement(selectedYear)?.description}</P>
             </>
           }
