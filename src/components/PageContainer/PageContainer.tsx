@@ -18,7 +18,7 @@ const Container = styled.div<{ $variant: 'banner' | 'section' }>`
   position: ${props => props.$variant === 'banner' ? 'absolute' : 'relative'};
   z-index: 2;
   width: 100%;
-  min-height: calc(100vh - 64px);
+  min-height: calc(var(--app-height) - 64px);
   display: flex;
   align-items: center;
   padding: 0 15%;
