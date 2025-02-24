@@ -10,27 +10,30 @@ export const fun = {
   },
   about: {
     title: "About Me",
-    description1: "From boarding passes to bank balances, I build the digital bridges you cross daily.",
-    description2: "Created digital solutions across industries - most are confidential, so welcome to my public portfolio!",
+    description1: "If your app doesn’t crash, your checkout doesn’t fail, and your flight gets booked smoothly—you're welcome.",
+    description2: "I’d tell you more about my projects, but then I’d have to make you sign an NDA. So, welcome to my public portfolio!",
     skills: {
       title: "Things I'm Good At:",
-      list: "Javascript, React (we're committed), React Native, TypeScript, GraphQL, Next.js, can perfectly boil eggs just the way I like it, Angular, Node.js, Docker (no more \"but it works on my machine\" excuses), Git (including professional conflict resolution), giving accurate estimates, and spotify playlist curating"
+      list: "React (we're committed), TypeScript, Node.js, parallel parking on the first try (sometimes), replying to texts in my head but forgetting to hit send, estimating task durations too accurately, spotify playlist curating, and accidentally overengineering side projects"
     },
     footer: "I make buttons do the clicky thing and websites go zoom while TypeScript yells at me about types"
   },
   timeline: {
     title: "Adventure Log",
-    firstCareerItem: "The year I traded my student ID for a work badge",
+    firstCareerItem: "The year I traded my student ID for Slack notifications",
     secondCareerItem: "I tried to remember something from 2018, but it\’s 404",
     thirdCareerItem: "Became an advanced gamer during the pandemic—special thanks to CS: Go, Overcooked, and Don't Starve Together!",
-    fourthCareerItem: `Tuktuked my way through Thailand, balancing remote work with red curry for 2 months. Earned my PADI underwater for 30m+`,
-    current: "probably trying to find my phone in the house",
+    fourthCareerItem: `Tuktuked my way through Thailand, balancing remote and Pad Thai for 2 months. Earned my PADI underwater for 30m+`,
+    current: "Lost in a sea of open tabs, send help.",
   },
   contact: {
-    title: "Contact Me",
-    description: "I'm always looking for new challenges and opportunities to grow. Let's connect and see how we can work together to achieve great things.",
+    title: "Where to Find Me",
+    description: "Dispatch a virtual raven, teleport a DM, or simply send an email—your call!",
     link1: "https://www.linkedin.com/in/fulyakaya/",
     link2: "https://github.com/fulyakaya",
-    button: "Contact Me"
+    button: "Open a Communication Portal",
+    nameFieldPlaceholder: 'Name',
+    emailFieldPlaceholder: 'Your digital pigeon’s return address',
+    messageFieldPlaceholder: 'Transmit your thoughts in 3…2…1…',
   }
 }; 
