@@ -23,7 +23,7 @@ export const fun = {
     firstCareerItem: "The year I traded my student ID for Slack notifications",
     secondCareerItem: "I tried to remember something from 2018, but it\’s 404",
     thirdCareerItem: "Became an advanced gamer during the pandemic—special thanks to CS: Go, Overcooked, and Don't Starve Together!",
-    fourthCareerItem: `Tuktuked my way through Thailand, balancing remote and Pad Thai for 2 months. Earned my PADI underwater for 30m+`,
+    fourthCareerItem: `Tuktuked my way through Thailand, balancing remote work with Pad Thai for two months. Earned my PADI certification, diving 30m+ underwater`,
     current: "Lost in a sea of open tabs, send help.",
   },
   contact: {
