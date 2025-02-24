@@ -26,10 +26,16 @@ const AboutSection = () => {
         <TitleContainer>
           <H2>{t('about.title')}</H2>
         </TitleContainer>
+        <SkillsContainer>
+
         <P>{t('about.description1')}</P>
         <P>{t('about.description2')}</P>
+        <TechicalExpContainer>
         <H3>{t('about.skills.title')}</H3>
         <P>{t('about.skills.list')}</P>
+        </TechicalExpContainer>
+        </SkillsContainer>
+       
         <TimelineTitleContainer>
           <H2>{t('timeline.title')}</H2>
         </TimelineTitleContainer>
@@ -41,11 +47,20 @@ const AboutSection = () => {
   );
 };
 
+const SkillsContainer = styled.div`
+  min-height: 420px;
+`;
+
 const TitleContainer = styled.div`
-margin: 24px 0;
+  margin-top: 12%;
 `;
 
 const TimelineTitleContainer = styled(TitleContainer)`
-  margin-top: 15%;
+  margin-top: 12%;
 `;
+
+const TechicalExpContainer = styled.div`
+  margin-top: 12%;
+`;
+
 export default AboutSection; 

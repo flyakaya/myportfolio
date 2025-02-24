@@ -10,6 +10,10 @@ const StyledAppBar = styled(AppBar)(({ theme }) => ({
   backgroundColor: theme.palette.common.black,
   boxShadow: theme.customShadows.navbar,
   height: theme.customSpacing.navbar.height,
+  position: 'fixed',
+  top: 0,
+  left: 0,
+  right: 0,
   [theme.breakpoints.down('sm')]: {
     padding: theme.spacing(1),
   }
@@ -44,10 +48,10 @@ const Header = () => {
   const { t } = useTranslation();
 
   return (
-    <StyledAppBar position="sticky">
+    <StyledAppBar>
       <StyledToolbar>
         <Logo to="/">{t('header.logoText')}</Logo>
-          <ToneToggle />
+        <ToneToggle />
       </StyledToolbar>
     </StyledAppBar>
   );

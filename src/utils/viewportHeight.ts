@@ -9,7 +9,7 @@ const debounce = (fn: Function, ms = 100) => {
 
 export const setAppHeight = () => {
   const doc = document.documentElement;
-  doc.style.setProperty('--app-height', `${window.innerHeight}px`);
+  doc.style.setProperty('--app-height', `${window.innerHeight + 64}px`);
 };
 
 // Debounced version for events that might fire rapidly

@@ -26,7 +26,7 @@ type SliderYears = {
 const sliderYears: SliderYears = {
   min: 2017,
   max: 2025,
-  default: 2025,
+  default: 2017,
   firstCareerItem: 2017,
   secondCareerItem: 2018,
   thirdCareerItem: 2022,
