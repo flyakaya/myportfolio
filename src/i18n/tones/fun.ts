@@ -32,8 +32,9 @@ export const fun = {
     link1: "https://www.linkedin.com/in/fulyakaya/",
     link2: "https://github.com/fulyakaya",
     button: "Open a Communication Portal",
-    nameFieldPlaceholder: 'Name',
+    nameFieldPlaceholder: 'Your Username in Real Life',
     emailFieldPlaceholder: 'Your digital pigeon’s return address',
     messageFieldPlaceholder: 'Transmit your thoughts in 3…2…1…',
+    description2: "Ping me for code, collaboration or to swap current favorite tracks",
   }
 }; 

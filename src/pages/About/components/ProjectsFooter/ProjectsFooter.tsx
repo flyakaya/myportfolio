@@ -26,7 +26,9 @@ const ProjectsFooter = () => {
       <Content>
         <TitleContainer>
           <H2>{t('contact.title')}</H2>
+          <ContactDescription>
           <H4>{t('contact.description')}</H4>
+          </ContactDescription>
           <H4>{t('contact.description2')}</H4>
         </TitleContainer>
         <ContactSection>
@@ -47,8 +49,13 @@ const TitleContainer = styled.div`
   min-height: 120px;
 `;
 
+const ContactDescription = styled.div`
+  min-height: 60px;
+`;
+
 const ContactSection = styled.div`
   display: flex;
+  flex-direction: column;
   flex-direction: column;
 
   ${media.up('md')`
